@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Messenger";
+}
+
+<h2>Messenger</h2>
+
+
+
+@using (Html.BeginForm())
+{
+    <input name="Message"/>
+    <input type="submit" value="Send" />
+
+}
+<form>
+    
+
+</form>
+
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">Navigation</li>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("About", "About", "Home")</li>
+</ul>
